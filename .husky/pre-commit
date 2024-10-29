@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run linting, formatting check, and tests
+npm run lint && npm run prettier-check && npm test

@@ -1,0 +1,11 @@
+services:
+  storybook:
+    build: .
+    container_name: leche_lanzema_coding_assignment13
+    ports:
+      - "8018:8018"
+    environment:
+      - NODE_ENV=development
+    command: npm run storybook -- --no-open
+    volumes:
+      - .:/app
